@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Walaa's Shop</title>
+  <link rel="stylesheet" href="assets/css/CommonStyles.css">
+  <link rel="stylesheet" href="assets/css/products.css">
+  <link rel="stylesheet" href="assets/css/user-dropdown.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">Walaa's Shop</a>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Search for products...">
+          <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            <li><a href="wishlist.html" class="wishlist-icon"><i class="fas fa-heart"></i></a></li>
+            <li id="account-link"><a href="login.html">Account</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="wishlist.html">Wishlist</a></li>
+      <li id="mobile-account-link"><a href="login.html">Account</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>All Products</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> / <span>Products</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section">
+    <div class="container">
+      <div class="products-layout">
+        <aside class="filters-sidebar">
+          <div class="filter-section">
+            <h3>Categories</h3>
+            <ul class="filter-list" id="category-filters">
+              <li>
+                <input type="checkbox" id="Hair Protein Treatment" name="category" value="Hair Protein Treatment">
+                <label for="Hair Protein Treatment">Hair Protein Treatment</label>
+              </li>
+              <li>
+                <input type="checkbox" id="Hair Straighteners" name="category" value="Hair Straighteners">
+                <label for="Hair Straighteners">Hair Straighteners</label>
+              </li>
+              <li>
+                <input type="checkbox" id="Accessories" name="category" value="Accessories">
+                <label for="Accessories">Accessories</label>
+              </li>
+              <li>
+                <input type="checkbox" id="Hair Dryers" name="category" value="Hair Dryers">
+                <label for="Hair Dryers">Hair Dryers</label>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="filter-section">
+            <h3>Price Range</h3>
+            <div class="price-range">
+              <input type="range" id="price-slider" min="0" max="1000" step="10" value="500">
+              <div class="price-labels">
+                <span>$0</span>
+                <span id="price-value">$500</span>
+                <span>$1000</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="filter-section">
+            <h3>Rating</h3>
+            <ul class="filter-list" id="rating-filters">
+              <li>
+                <input type="checkbox" id="rating-5" name="rating" value="5">
+                <label for="rating-5">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="rating-4" name="rating" value="4">
+                <label for="rating-4">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>& up</span>
+                  </div>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="rating-3" name="rating" value="3">
+                <label for="rating-3">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>& up</span>
+                  </div>
+                </label>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="filter-actions">
+            <button id="apply-filters" class="btn btn-primary">Apply Filters</button>
+            <button id="clear-filters" class="btn btn-outline">Clear All</button>
+          </div>
+        </aside>
+        
+        <div class="products-content">
+          <div class="products-header">
+            <div class="products-count">
+              <span id="products-total">0</span> Products
+            </div>
+            <div class="products-sorting">
+              <label for="sort-by">Sort by:</label>
+              <select id="sort-by">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Customer Rating</option>
+                <option value="newest">Newest Arrivals</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="products-grid" id="products-grid">
+            <!-- Products will be loaded dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Walaa's Shop</h3>
+          <p>Your one-stop shop for all your needs.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="shipping.html">Shipping Policy</a></li>
+            <li><a href="returns.html">Return Policy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get updates on new products and special offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Walaa's Shop. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      loadAllProducts();
+      updateHeaderUI();
+    });
+  </script>
+</body>
+</html>

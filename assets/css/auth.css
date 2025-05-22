@@ -1,0 +1,224 @@
+/* 
+ * ShopEase - Authentication Styles
+ * Styles for login and signup pages
+ */
+
+/* Header for simple pages */
+.header-simple {
+  padding: var(--space-2) 0;
+  box-shadow: none;
+}
+
+.header-simple .header-content {
+  justify-content: center;
+}
+
+/* Footer simple */
+.footer-simple {
+  background-color: var(--neutral-100);
+  color: var(--neutral-700);
+  text-align: center;
+  padding: var(--space-2) 0;
+  margin-top: var(--space-3);
+}
+
+/* Authentication Styles */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 140px);
+  padding: var(--space-3) var(--container-padding);
+}
+
+.auth-card {
+  background-color: var(--neutral-100);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 500px;
+  padding: var(--space-4);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+.auth-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-1);
+}
+
+.auth-header p {
+  color: var(--neutral-600);
+}
+
+.auth-form {
+  margin-bottom: var(--space-3);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 0.25rem;
+}
+
+.input-wrapper i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--neutral-600);
+}
+
+.input-wrapper input {
+  padding-left: 2.5rem;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--neutral-600);
+  cursor: pointer;
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.75rem;
+  min-height: 1rem;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input {
+  margin-right: 0.5rem;
+}
+
+.forgot-password {
+  color: var(--primary-color);
+  font-size: 0.875rem;
+}
+
+.form-message {
+  text-align: center;
+  color: var(--error-color);
+  min-height: 1.5rem;
+  margin-top: var(--space-1);
+}
+
+.form-message.success {
+  color: var(--success-color);
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  margin: var(--space-3) 0;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--neutral-300);
+}
+
+.auth-divider span {
+  padding: 0 var(--space-1);
+  color: var(--neutral-600);
+  font-size: 0.875rem;
+}
+
+.social-login {
+  display: grid;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.btn-google {
+  background-color: #DB4437;
+  color: white;
+}
+
+.btn-google:hover {
+  background-color: #C23321;
+}
+
+.btn-facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+.btn-facebook:hover {
+  background-color: #2D4373;
+}
+
+.auth-footer {
+  text-align: center;
+  color: var(--neutral-700);
+  font-size: 0.875rem;
+}
+
+.auth-footer a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.terms-privacy {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--space-3);
+}
+
+.terms-privacy input {
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.terms-privacy label {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.terms-privacy a {
+  color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .auth-card {
+    padding: var(--space-3);
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .form-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
+}

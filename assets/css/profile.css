@@ -1,0 +1,242 @@
+/* 
+ * ShopEase - Profile Page Styles
+ * Styles for user profile and order history
+ */
+
+.profile-section {
+  padding: var(--space-4) 0;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: var(--space-4);
+}
+
+.profile-sidebar {
+  background-color: var(--neutral-100);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  height: fit-content;
+}
+
+.profile-menu {
+  list-style: none;
+}
+
+.profile-menu li {
+  margin-bottom: var(--space-1);
+}
+
+.profile-menu a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  color: var(--neutral-700);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.profile-menu a:hover,
+.profile-menu a.active {
+  background-color: var(--primary-lightest);
+  color: var(--primary-color);
+}
+
+.profile-menu i {
+  width: 20px;
+  text-align: center;
+}
+
+.profile-content {
+  background-color: var(--neutral-100);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--neutral-300);
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--neutral-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--neutral-600);
+}
+
+.profile-info h1 {
+  margin-bottom: 0.25rem;
+}
+
+.profile-info p {
+  color: var(--neutral-600);
+  margin-bottom: 0;
+}
+
+.profile-form {
+  max-width: 600px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.form-actions {
+  margin-top: var(--space-3);
+  display: flex;
+  gap: var(--space-2);
+}
+
+/* Order History Styles */
+.order-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.order-card {
+  background-color: var(--neutral-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--neutral-300);
+}
+
+.order-number {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.order-date {
+  color: var(--neutral-600);
+  font-size: 0.875rem;
+}
+
+.order-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-delivered {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.status-processing {
+  background-color: var(--warning-color);
+  color: var(--neutral-900);
+}
+
+.status-cancelled {
+  background-color: var(--error-color);
+  color: white;
+}
+
+.order-items {
+  margin-bottom: var(--space-2);
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--neutral-300);
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item-image {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.order-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order-item-details {
+  flex: 1;
+}
+
+.order-item-name {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.order-item-meta {
+  font-size: 0.875rem;
+  color: var(--neutral-600);
+}
+
+.order-total {
+  text-align: right;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.order-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .order-header {
+    flex-direction: column;
+    gap: var(--space-1);
+    text-align: center;
+  }
+  
+  .order-actions {
+    flex-direction: column;
+  }
+  
+  .order-actions .btn {
+    width: 100%;
+  }
+}

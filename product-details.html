@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - ShopEase</title>
+  <link rel="stylesheet" href="assets/css/CommonStyles.css">
+  <link rel="stylesheet" href="assets/css/product-details.css">
+  <link rel="stylesheet" href="assets/css/user-dropdown.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">Walaa's Shop</a>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Search for products...">
+          <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            <li><a href="wishlist.html" class="wishlist-icon"><i class="fas fa-heart"></i></a></li>
+            <li id="account-link"><a href="login.html">Account</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="wishlist.html">Wishlist</a></li>
+      <li id="mobile-account-link"><a href="login.html">Account</a></li>
+    </ul>
+  </div>
+
+  <section class="product-details" id="product-details">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> / 
+        <a href="products.html">Products</a> / 
+        <span id="product-name-breadcrumb">Product Name</span>
+      </div>
+      
+      <div class="product-container">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img id="main-product-image" src="https://via.placeholder.com/600x600" alt="Product Image">
+          </div>
+          <div class="thumbnail-list" id="thumbnail-list">
+            <!-- Thumbnails will be loaded dynamically -->
+          </div>
+        </div>
+        
+        <div class="product-info">
+          <h1 id="product-name">Product Name</h1>
+          
+          <div class="product-meta">
+            <div class="product-rating">
+              <div class="stars" id="product-rating">
+                <!-- Stars will be loaded dynamically -->
+              </div>
+              <span id="review-count">0 reviews</span>
+            </div>
+            <div class="product-sku">
+              SKU: <span id="product-sku">SKU12345</span>
+            </div>
+          </div>
+          
+          <div class="product-price">
+            <span class="current-price" id="product-price">$0.00</span>
+            <span class="original-price" id="product-original-price">$0.00</span>
+            <span class="discount-badge" id="discount-badge">0% OFF</span>
+          </div>
+          
+          <div class="product-description" id="product-description">
+            <!-- Product description will be loaded dynamically -->
+          </div>
+          
+          <div class="product-variations" id="product-variations">
+            <!-- Product variations will be loaded dynamically -->
+          </div>
+          
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button class="quantity-btn" id="decrease-quantity">-</button>
+              <input type="number" id="product-quantity" value="1" min="1" max="10">
+              <button class="quantity-btn" id="increase-quantity">+</button>
+            </div>
+            
+            <div class="action-buttons">
+              <button class="btn btn-primary" id="add-to-cart">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+              <button class="btn btn-outline-primary" id="add-to-wishlist">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="product-delivery">
+            <div class="delivery-option">
+              <i class="fas fa-truck"></i>
+              <div>
+                <h4>Free Shipping</h4>
+                <p>On orders over $50</p>
+              </div>
+            </div>
+            <div class="delivery-option">
+              <i class="fas fa-undo"></i>
+              <div>
+                <h4>Easy Returns</h4>
+                <p>30 day return policy</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-share">
+            <span>Share:</span>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="product-tabs">
+        <div class="tabs-header">
+          <button class="tab-btn active" data-tab="description">Description</button>
+          <button class="tab-btn" data-tab="specifications">Specifications</button>
+          <button class="tab-btn" data-tab="reviews">Reviews</button>
+        </div>
+        
+        <div class="tab-content active" id="description-tab">
+          <div class="tab-inner" id="full-description">
+            <!-- Full description will be loaded dynamically -->
+          </div>
+        </div>
+        
+        <div class="tab-content" id="specifications-tab">
+          <div class="tab-inner">
+            <table class="specs-table" id="specs-table">
+              <!-- Specifications will be loaded dynamically -->
+            </table>
+          </div>
+        </div>
+        
+        <div class="tab-content" id="reviews-tab">
+          <div class="tab-inner">
+            <div class="reviews-summary">
+              <div class="average-rating">
+                <h3 id="average-rating">0.0</h3>
+                <div class="stars" id="average-rating-stars">
+                  <!-- Average rating stars will be loaded dynamically -->
+                </div>
+                <p><span id="total-reviews">0</span> Reviews</p>
+              </div>
+              
+              <div class="rating-breakdown" id="rating-breakdown">
+                <!-- Rating breakdown will be loaded dynamically -->
+              </div>
+            </div>
+            
+            <div class="reviews-list" id="reviews-list">
+              <!-- Reviews will be loaded dynamically -->
+            </div>
+            
+            <div class="write-review" id="write-review-section">
+              <h3>Write a Review</h3>
+              <form id="review-form">
+                <div class="form-group">
+                  <label>Your Rating</label>
+                  <div class="rating-input">
+                    <i class="far fa-star" data-rating="1"></i>
+                    <i class="far fa-star" data-rating="2"></i>
+                    <i class="far fa-star" data-rating="3"></i>
+                    <i class="far fa-star" data-rating="4"></i>
+                    <i class="far fa-star" data-rating="5"></i>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="review-title">Review Title</label>
+                  <input type="text" id="review-title" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="review-content">Your Review</label>
+                  <textarea id="review-content" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit Review</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Walaa's Shop</h3>
+          <p>Your one-stop shop for all your needs.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="shipping.html">Shipping Policy</a></li>
+            <li><a href="returns.html">Return Policy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get updates on new products and special offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ShopEase. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get('id');
+      
+      if (productId) {
+        loadProductDetails(productId);
+        loadRelatedProducts(productId);
+      } else {
+        window.location.href = 'products.html';
+      }
+      
+      updateHeaderUI();
+    });
+  </script>
+</body>
+</html>

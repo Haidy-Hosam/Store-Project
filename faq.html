@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - ShopEase</title>
+  <link rel="stylesheet" href="assets/css/CommonStyles.css">
+  <link rel="stylesheet" href="assets/css/policies.css">
+  <link rel="stylesheet" href="assets/css/user-dropdown.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">ShopEase</a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            <li><a href="wishlist.html" class="wishlist-icon"><i class="fas fa-heart"></i></a></li>
+            <li id="account-link"><a href="login.html">Account</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="wishlist.html">Wishlist</a></li>
+      <li id="mobile-account-link"><a href="login.html">Account</a></li>
+    </ul>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> / <span>FAQ</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="policy-section">
+    <div class="container">
+      <div class="faq-categories">
+        <button class="faq-category active" data-category="ordering">Ordering</button>
+        <button class="faq-category" data-category="shipping">Shipping</button>
+        <button class="faq-category" data-category="returns">Returns</button>
+        <button class="faq-category" data-category="account">Account</button>
+        <button class="faq-category" data-category="payment">Payment</button>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-category-content active" id="ordering">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How do I place an order?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>To place an order:</p>
+              <ol>
+                <li>Browse our products and click "Add to Cart" for items you want</li>
+                <li>Click the cart icon to review your items</li>
+                <li>Click "Proceed to Checkout"</li>
+                <li>Fill in your shipping and payment information</li>
+                <li>Review your order and click "Place Order"</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I modify or cancel my order?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>You can modify or cancel your order within 1 hour of placing it. After that, please contact our customer service team for assistance.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you offer bulk ordering?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we offer bulk ordering for businesses and large purchases. Please contact our sales team for special pricing and arrangements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-category-content" id="shipping">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What are your shipping options?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>We offer several shipping options:</p>
+              <ul>
+                <li>Standard Shipping (5-7 business days)</li>
+                <li>Express Shipping (2-3 business days)</li>
+                <li>Next Day Delivery (order by 2 PM)</li>
+              </ul>
+              <p>Free shipping is available on orders over $50.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How can I track my order?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Once your order ships, you'll receive a tracking number via email. You can also track your order in your account dashboard.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-category-content" id="returns">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is your return policy?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>We offer a 30-day return policy for most items. Items must be unused and in original packaging. Some restrictions apply to certain products.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How do I initiate a return?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>To initiate a return:</p>
+              <ol>
+                <li>Log into your account</li>
+                <li>Go to your orders</li>
+                <li>Select the item you want to return</li>
+                <li>Follow the return instructions</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-category-content" id="account">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How do I create an account?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Click the "Account" link in the top menu and select "Sign Up". Fill in your information to create an account.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>I forgot my password. What should I do?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Click "Forgot Password" on the login page and follow the instructions to reset your password.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-category-content" id="payment">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What payment methods do you accept?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>We accept:</p>
+              <ul>
+                <li>Credit/Debit Cards (Visa, MasterCard, American Express)</li>
+                <li>PayPal</li>
+                <li>Apple Pay</li>
+                <li>Google Pay</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Is my payment information secure?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we use industry-standard SSL encryption to protect your payment information. We never store your full credit card details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-support">
+        <h2>Still have questions?</h2>
+        <p>Our customer support team is here to help.</p>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ShopEase</h3>
+          <p>Your one-stop shop for all your needs.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="shipping.html">Shipping Policy</a></li>
+            <li><a href="returns.html">Return Policy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get updates on new products and special offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ShopEase. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/faq.js"></script>
+
+</body>
+</html>

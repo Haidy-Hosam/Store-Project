@@ -1,0 +1,213 @@
+/* 
+ * ShopEase - Checkout Page Styles
+ * Styles specific to checkout.html
+ */
+
+.checkout-container {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.checkout-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+  width: 100%;
+}
+
+.checkout-steps .step {
+  flex-grow: 1;
+  text-align: center;
+  padding: var(--space-2);
+  border-bottom: 2px solid var(--neutral-300);
+  cursor: default;
+  font-weight: 600;
+  color: var(--neutral-600);
+  user-select: none;
+}
+
+.checkout-steps .step.active {
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.forms-container {
+  flex: 2;
+}
+
+.checkout-form {
+  background: var(--neutral-100);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-sm);
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.checkout-form.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.checkout-form h2 {
+  margin-bottom: var(--space-3);
+  text-align: center;
+}
+
+.checkout-form label {
+  display: block;
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-1);
+  font-weight: 600;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: var(--space-2);
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.checkout-form input.error {
+  border-color: red;
+}
+
+.checkout-form button {
+  margin-top: var(--space-3);
+  padding: var(--space-2);
+  width: 100%;
+  border: none;
+  background-color: var(--success-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.3s ease;
+}
+
+.checkout-form button:hover {
+  background-color: #218838;
+}
+
+.order-summary {
+  flex: 1;
+  position: sticky;
+  top: var(--space-4);
+  background: var(--neutral-100);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-sm);
+  height: fit-content;
+}
+
+.order-summary h3 {
+  margin-bottom: var(--space-3);
+  text-align: center;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.summary-item.total {
+  font-weight: 700;
+  border-top: 2px solid var(--neutral-300);
+  padding-top: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.review-section {
+  border-bottom: 1px solid var(--neutral-300);
+  padding-bottom: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.review-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.review-section h3 {
+  margin-bottom: var(--space-2);
+}
+
+#order-items {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.review-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.review-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-left: var(--space-2);
+}
+
+.review-item-details {
+  flex: 1;
+  text-align: right;
+}
+
+#order-confirmation {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background-color: var(--neutral-100);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  z-index: 10000;
+  max-width: 400px;
+  width: 90%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+}
+
+#order-confirmation.show {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#order-confirmation i {
+  font-size: 4rem;
+  color: var(--success-color);
+  margin-bottom: var(--space-3);
+}
+
+#order-confirmation button {
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--success-color);
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+}
+
+#order-confirmation button:hover {
+  background-color: #21882a;
+}

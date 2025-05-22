@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Panel - ShopEase</title>
+  <link rel="stylesheet" href="assets/css/CommonStyles.css" />
+  <link rel="stylesheet" href="assets/css/admin.css"/>
+  <link rel="stylesheet" href="assets/css/user-dropdown.css">
+  <link rel="stylesheet" href="assets/css/order-details.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">ShopEase Admin</a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="admin.html" class="active">Orders</a></li>
+            <li><a href="index.html" target="_blank">View Site</a></li>
+            <li id="admin-account">
+              <a href="#" class="admin-logout">Logout</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="admin-section">
+    <div class="container">
+      <div class="admin-header">
+        <h1>Order Management</h1>
+      </div>
+
+      <div class="orders-table-wrapper">
+        <table class="orders-table">
+          <thead>
+            <tr>
+              <th>Order #</th>
+              <th>Customer</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Total</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="orders-table-body">
+            <!-- Orders will be loaded here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Details Modal -->
+  <div id="order-modal" class="modal">
+    <div class="modal-content">
+      <!-- Order details will be loaded here -->
+    </div>
+  </div>
+
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>
