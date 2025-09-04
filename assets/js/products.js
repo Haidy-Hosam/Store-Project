@@ -316,7 +316,7 @@ const products = [
     originalPrice: 99.99,
     rating: 4.5,
     reviewCount: 95,
-    category: 'clothing',
+    category: '',
     isNew: true,
     isFeatured: false,
     images: [
@@ -406,7 +406,7 @@ const products = [
     originalPrice: 149.99,
     rating: 4.7,
     reviewCount: 68,
-    category: 'clothing',
+    category: '',
     isNew: false,
     isFeatured: true,
     images: [
