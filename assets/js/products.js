@@ -414,14 +414,14 @@ const products = [
       'assets/img/C13-2.jpg',
     ],
     stock: 40,
-    sku: 'JCKT-WIN-014',
-    specifications: {
-      'Material': 'Polyester, cotton lining',
-      'Insulation': '100g Thinsulate',
-      'Water Resistance': 'Yes',
-      'Temperature Rating': '-10°C to 5°C',
-      'Warranty': '1 year'
-    },
+    // sku: 'JCKT-WIN-014',
+    // specifications: {
+    //   'Material': 'Polyester, cotton lining',
+    //   'Insulation': '100g Thinsulate',
+    //   'Water Resistance': 'Yes',
+    //   'Temperature Rating': '-10°C to 5°C',
+    //   'Warranty': '1 year'
+    // },
     variations: {
       color: ['Black', 'Navy', 'Gray'],
       size: ['S', 'M', 'L', 'XL']
