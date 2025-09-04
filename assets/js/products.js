@@ -316,7 +316,7 @@ const products = [
     originalPrice: 99.99,
     rating: 4.5,
     reviewCount: 95,
-    category: '',
+    category: 'sets',
     isNew: true,
     isFeatured: false,
     images: [
@@ -400,8 +400,8 @@ const products = [
   /*==================================*/
   {
     id: 'prod_014',
-    name: 'Winter Jacket',
-    description: 'Stay warm in style with this insulated winter jacket featuring a water-resistant finish.',
+    name: 'Set',
+    description: '.',
     price: 119.99,
     originalPrice: 149.99,
     rating: 4.7,
