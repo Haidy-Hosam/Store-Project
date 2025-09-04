@@ -1,5 +1,5 @@
 /**
- * ShopEase - Products JavaScript
+ * Walaa's Shop - Products JavaScript
  * Handles product-related functionality
  */
 
@@ -9,11 +9,11 @@ const products = [
     id: 'prod_001',
     name: 'Queen',
     description: 'Experience crystal-clear sound with our premium wireless headphones. Perfect for music lovers and professionals.',
-    price: 249.99,
-    originalPrice: 299.99,
+    price: 3600,
+    originalPrice: 4000,
     rating: 4.7,
     reviewCount: 124,
-    category: 'Hair Care Sets',
+    category: 'straighteners',
     isNew: true,
     isFeatured: true,
         images: [
@@ -46,7 +46,7 @@ const products = [
     originalPrice: 199.99,
     rating: 4.5,
     reviewCount: 87,
-    category: 'Hair Care Sets',
+    category: 'hair Sets',
     isNew: true,
     isFeatured: true,
     images: [
@@ -111,7 +111,7 @@ const products = [
     reviewCount: 103,
     category: 'home',
     isNew: false,
-    isFeatured: false,
+    isFeatured: true,
         images: [
       'assets/img/v.jpg',
       'assets/img/v.jpg',
@@ -168,7 +168,7 @@ const products = [
     originalPrice: 34.99,
     rating: 4.8,
     reviewCount: 56,
-    category: 'Hair Care Sets',
+    category: 'hair Sets',
     isNew: false,
     isFeatured: true,
     images: [
@@ -198,7 +198,7 @@ const products = [
     originalPrice: 159.99,
     rating: 4.7,
     reviewCount: 91,
-    category: 'Hair Care Sets',
+    category: 'hair Sets',
     isNew: false,
     isFeatured: false,
     images: [
@@ -227,7 +227,7 @@ const products = [
     originalPrice: 109.99,
     rating: 4.6,
     reviewCount: 117,
-    category: 'Accessories',
+    category: 'accessories',
     isNew: true,
     isFeatured: false,
     images: [
@@ -257,7 +257,7 @@ const products = [
     originalPrice: 249.99,
     rating: 4.6,
     reviewCount: 89,
-    category: 'Hair Care Sets',
+    category: 'hair Sets',
     isNew: true,
     isFeatured: false,
     images: [
@@ -287,7 +287,7 @@ const products = [
     originalPrice: 49.99,
     rating: 4.8,
     reviewCount: 72,
-    category: 'home',
+    category: 'Protein',
     isNew: false,
     isFeatured: true,
     images: [
@@ -497,7 +497,7 @@ const products = [
     originalPrice: 79.99,
     rating: 4.7,
     reviewCount: 60,
-    category: 'beauty',
+    category: 'accessories',
     isNew: true,
     isFeatured: false,
     images: [

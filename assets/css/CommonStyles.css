@@ -5,10 +5,10 @@
 
 :root {
   /* Color System */
-  --primary-color: #0066CC;
-  --primary-dark: #004C99;
-  --primary-light: #4D94DB;
-  --primary-lightest: #E6F0FA;
+  --primary-color: #f72c6f;      /* Rose Pink - اللون الرئيسي */
+  --primary-dark: #C2185B;       /* Raspberry Pink - الغامق */
+  --primary-light: #F06292;      /* Light Pink - الفاتح */
+  --primary-lightest: #FCE4EC;   /* Very Light Pink - الأفتح */
   
   --accent-color: #FF9500;
   --accent-dark: #CC7600;
