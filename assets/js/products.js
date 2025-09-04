@@ -369,7 +369,7 @@ const products = [
   /*==================================*/
   {
     id: 'prod_013',
-    name: 'Portable Bluetooth Speaker',
+    name: 'RA',
     description: 'Take your music anywhere with this compact, waterproof Bluetooth speaker.',
     price: 49.99,
     originalPrice: 59.99,
