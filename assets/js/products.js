@@ -400,7 +400,7 @@ const products = [
   /*==================================*/
   {
     id: 'prod_014',
-    name: 'Set',
+    name: 'SSet',
     description: '.',
     price: 119.99,
     originalPrice: 149.99,
